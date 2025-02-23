@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace QR_by_kuzneciv
+namespace QRScannerWinForm
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace QR_by_kuzneciv
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new MainForm());
         }
     }
 }
