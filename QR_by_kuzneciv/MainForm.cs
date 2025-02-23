@@ -65,15 +65,6 @@ namespace QRScannerWinForm
         }
         private void buttonLoad2_Click_1(object sender, EventArgs e)
         {
-            if (b)
-            {
-                var assembly = Assembly.GetExecutingAssembly();
-                using (Stream stream = assembly.GetManifestResourceStream("QR_by_kuzneciv.Resources.cor.wav"))
-                {
-                    SoundPlayer player = new SoundPlayer(stream);
-                    player.Play();
-                }
-            }
             openFileDialog1.Filter = "Image Files|*.png;*.jpeg;*.jpg;*.bmp|All Files|*.*";
             openFileDialog1.Title = "Выберите изображение с QR-кодом";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
@@ -90,15 +81,6 @@ namespace QRScannerWinForm
         }
         private void buttonQR2_Click_1(object sender, EventArgs e)
         {
-            if (b)
-            {
-                var assembly = Assembly.GetExecutingAssembly();
-                using (Stream stream = assembly.GetManifestResourceStream("QR_by_kuzneciv.Resources.cor.wav"))
-                {
-                    SoundPlayer player = new SoundPlayer(stream);
-                    player.Play();
-                }
-            }
             if (pictureBox2.Image == null)
             {
                 MessageBox.Show("Пожалуйста, загрузите изображение с QR-кодом =)");
@@ -174,15 +156,7 @@ namespace QRScannerWinForm
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            if (b)
-            {
-                var assembly = Assembly.GetExecutingAssembly();
-                using (Stream stream = assembly.GetManifestResourceStream("QR_by_kuzneciv.Resources.cor.wav"))
-                {
-                    SoundPlayer player = new SoundPlayer(stream);
-                    player.Play();
-                }
-            }
+
             
             if (a)
             {
@@ -254,20 +228,7 @@ namespace QRScannerWinForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (b)
-            {
-                b = false;
-            }
-            else
-            {
-                b = true;
-                var assembly = Assembly.GetExecutingAssembly();
-                using (Stream stream = assembly.GetManifestResourceStream("QR_by_kuzneciv.Resources.cor.wav"))
-                {
-                    SoundPlayer player = new SoundPlayer(stream);
-                    player.Play();
-                }
-            }
+           
 
         }
     }
