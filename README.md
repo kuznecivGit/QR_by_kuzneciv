@@ -1,8 +1,10 @@
 Hello everyone! This is my humble C# application for scanning QR codes.  
 
+-------------------------------------------------------------------------------------------------
 How to use?
 When you launch the application, you see a banner with a project description and useful links.
 At the bottom, there are different segments:
+-------------------------------------------------------------------------------------------------
 
 Segment 1
 
@@ -22,3 +24,8 @@ A button to enable button sounds.
 Author:  
 @kuzneciv  
 kuzneciv@gmail.com
+
+-------------------------------------------------------------------------------------------------
+P. S. In the root of the project, there are files "MainForm.cs" and "QR_by kuzneciv.exe." 
+They do not work and need to be opened from their "originals" located inside the project folders. 
+The folders in the root are created only for convenient demonstration.
